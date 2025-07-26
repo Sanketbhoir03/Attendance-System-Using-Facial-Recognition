@@ -1,83 +1,32 @@
-Face Recognition Based Attendance Monitoring System
-A Python-based smart attendance system that uses facial recognition to automate the process of marking attendance with an easy-to-use graphical interface (GUI).
+# Face_recognition_based_attendance_system
+A python GUI integrated attendance system using face recognition to take attendance.
 
-Overview
-This system captures a user’s face through a webcam, identifies the person using a trained deep learning model, and marks attendance in real-time. It provides a secure, scalable, and user-friendly solution for managing attendance records for both students and admins.
+In this python project, I have made an attendance system which takes attendance by using face recognition technique. I have also intergrated it with GUI (Graphical user interface) so it can be easy to use by anyone. GUI for this project is also made on python using tkinter.
 
-Admins have extra privileges such as adding/removing users, managing attendance data, and modifying user credentials.
+TECHNOLOGY USED:
+1) tkinter for whole GUI
+2) OpenCV for taking images and face recognition (cv2.face.LBPHFaceRecognizer_create())
+3) CSV, Numpy, Pandas, datetime etc. for other purposes.
 
-Features
-Face recognition using a trained model.h5
+FEATURES:
+1) Easy to use with interactive GUI support.
+2) Password protection for new person registration.
+3) Creates/Updates CSV file for deatils of students on registration.
+4) Creates a new CSV file everyday for attendance and marks attendance with proper date and time.
+5) Displays live attendance updates for the day on the main screen in tabular format with Id, name, date and time.
 
-Admin & student role support
+# SCREENSHOTS
+MAIN SCREEN:
+![Screenshot (9)](https://user-images.githubusercontent.com/37211676/58502148-97ec2a00-81a3-11e9-963e-674b9c3e05dc.png)
 
-Attendance marking only during scheduled times
+TAKING ATTENDANCE:
+![Screenshot (10)](https://user-images.githubusercontent.com/37211676/58502149-97ec2a00-81a3-11e9-9658-8968da396c2e.png)
 
-Daily attendance reports in CSV format
+SHOWING ATTENDANCE TAKEN:
+![Screenshot (11)](https://user-images.githubusercontent.com/37211676/58502151-9884c080-81a3-11e9-9a90-fec29940ee5a.png)
 
-Login authentication with default admin credentials
+HELP OPTION IN MENUBAR:
+![Screenshot (12)](https://user-images.githubusercontent.com/37211676/58502152-991d5700-81a3-11e9-861a-9115526010c2.png)
 
-Secure registration of new users with role selection (student/admin)
-
-Real-time date & time tracking
-
-Live attendance table with updates on the GUI
-
-Email notifications to absentees (optional extension supported)
-
-Technologies Used
-Technology	Purpose
-Python	Core programming language
-Tkinter	GUI development
-OpenCV	Face detection & camera operations
-Keras/TensorFlow	Deep learning model for face recognition
-NumPy / Pandas	Data manipulation
-CSV / Datetime	Attendance logging
-
-Project Structure
-Face Recognition Based Attendance Monitoring System/
-│
-├── main.py                       # Main application launcher
-├── registration.py              # Register new users
-├── model.h5                     # Trained face recognition model
-├── img.png                      # Image used in GUI
-│
-├── Attendance/                  # Folder with daily attendance CSVs
-│   ├── Attendance_25-04-2025.csv
-│   ├── ...
-│
-├── StudentDetails/              # Stores registered user details
-│   └── StudentDetails.csv
-│
-├── README.md                    # Project documentation
-└── __pycache__/                 # Python cache files
-
-How to Run the Project
-Install dependencies:
-pip install opencv-python numpy pandas tensorflow
-
-Run the main application:
-python main.py
-
-Register new user (student/admin) via the GUI.
-
-Mark attendance by detecting a registered face during scheduled lecture times.
-
-Future Improvements
-Integration with databases (SQLite/MySQL)
-
-Support for cloud-based attendance syncing
-
-Mobile camera face recognition
-
-Enhanced security (encryption, 2FA)
-
-Notification system for absentee reporting
-
-Acknowledgements
-OpenCV for computer vision tools
-
-TensorFlow/Keras for model training
-
-Python community for open-source libraries
-
+CHANGE PASSWORD OPTION:
+![Screenshot (13)](https://user-images.githubusercontent.com/37211676/58502146-97539380-81a3-11e9-8536-0c68160ecc55.png)
